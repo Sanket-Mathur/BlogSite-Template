@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+    background-color: #e6e6e6;
+}
+
+/*Header*/
+#header {
+    background-color: #333;
+}
+#collapsable-nav a {
+    color: white;
+    font-weight: bold;
+}
+#navbar-button {
+    float: left;
+    margin-left: 15px;
+}
+.navbar-default {
+    border: 0;
+}
+#search {
+    position: fixed;
+    right: 20px;
+    top: 8px;
+}
+#search #search-input {
+    background: none;
+    width: 72px;
+    color: white;
+    font-size: 20px;
+    transition: width 0.5s ease-in-out;
+}
+#search #search-input::placeholder {
+    color: #e6e6e6;
+}
+#search #search-input:focus {
+    width: 200px;
+}
+
+/*Footer*/
+#foot {
+    background-color: #333;
+    color: white;
+}
+
+/*Blog Page*/
+#home-wall {
+    background-image: url(../images/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 50px -15px 0 -15px;
+    padding-top: 30vh;
+    height: 95vh;
+}
+#home-wall h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 50px white;
+}
+#home-wall h3 {
+    display: inline;
+}
+#home-wall a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px white;
+}
+#home-wall #link1 {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#home-wall #link1:hover {
+    background-color: transparent;
+    border: 5px solid orange;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+#home-wall #link2 {
+    border: 5px solid orange;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 20px;
+    border-radius: 20px;
+    transition: 1s
+}
+#home-wall #link2:hover {
+    border: none;
+    background-color: orange;
+}
+#genre a {
+    color: inherit;
+    text-decoration: none;
+    margin: 20px 10px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+#genre a:hover {
+    background: black;
+    color: white;
+}
+.column a {
+    color: inherit;
+    text-decoration: none;
+}
+.column article {
+    background: white;
+    margin: 60px 10px;
+    padding-bottom: 10px;
+}
+.column article div {
+    overflow: hidden;
+}
+.column article img {
+    width: 100%;
+    transition: 0.5s;
+}
+.column a:hover img {
+    transform: scale(1.1);
+}
+.column article h2 , .column article h4 {
+    margin: 20px;
+}
+
+/*Media Queries*/
+/*--Desktop View--*/
+@media (min-width: 992px) {
+    #home-wall h1 {
+        font-size: 100px;
+    }
+    #row {
+        margin: 0 10%;
+    }
+}
